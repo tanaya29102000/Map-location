@@ -5,7 +5,6 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet-routing-machine/dist/leaflet-routing-machine.css';
 import 'leaflet-routing-machine';
 import './Mygeolocation.css';
-import Navbar from './Navbar';
 
 // Fix marker icon issue
 delete L.Icon.Default.prototype._getIconUrl;
@@ -76,7 +75,6 @@ const MapComponent = () => {
 
   return (
     <>
-      <Navbar />
       <div className="map-container">
         <form onSubmit={handleSearch} className="search-form">
           <input
